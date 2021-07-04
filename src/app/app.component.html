@@ -1,0 +1,205 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 left-col">
+      <!-- Znane technologie -->
+      <div class="row skill-row">
+        <span class="material-icons">
+          bolt
+        </span>
+        <p class="icons-label">Znane technologie</p>
+      </div>
+      <div class="row pills">
+        <div>
+          <span class="badge badge-pill badge-secondary" *ngFor="let tech of techniques">
+            {{tech}}
+          </span>
+        </div>
+      </div>
+
+      <!-- Systemy operacyjne -->
+      <div class="row skill-row">
+        <span class="material-icons">
+          computer
+        </span>
+        <p class="icons-label">Systemy operacyjne</p>
+      </div>
+      <div class="row pills">
+        <div>
+          <span class="badge badge-pill badge-secondary" *ngFor="let os of opSystems">
+            {{os}}
+          </span>
+        </div>
+      </div>
+
+      <!-- IDEs -->
+      <div class="row skill-row">
+        <span class="material-icons">
+          bug_report
+        </span>
+        <p class="icons-label">IDE</p>
+      </div>
+      <div class="row pills">
+        <div>
+          <span class="badge badge-pill badge-secondary" *ngFor="let ide of IDEs">
+            {{ide}}
+          </span>
+        </div>
+      </div>
+
+      <!-- Języki -->
+      <div class="row skill-row">
+        <span class="material-icons">
+          record_voice_over
+        </span>
+        <p class="icons-label">Języki obce</p>
+      </div>
+      <div class="row pills">
+        <div>
+          <span class="badge badge-pill badge-secondary" *ngFor="let lang of languages">
+            {{lang}}
+          </span>
+        </div>
+      </div>   
+      
+      <!-- Dodatkowe informacje -->
+      <div class="row skill-row">
+        <span class="material-icons">
+          add_box
+        </span>
+        <p class="icons-label">Dodatkowe informacje</p>
+      </div>
+      <div class="row pills">
+        <div>
+          <span class="badge badge-pill badge-secondary" *ngFor="let addInfo of additionalInfo">
+            {{addInfo}}
+          </span>
+        </div>
+      </div>         
+    </div>
+    <div class="col-8 right-col">
+      <mat-card class="personal-card main-card">
+        <mat-card-content>
+          <div class="row">
+            <div class="col-8">
+              <div class="row personal-row d-flex justify-content-center">
+                <p class="icons-label-personal" style="font-size: 24px; font-weight: bold;">Szymon Michalak</p>
+              </div>
+              <div class="row personal-row d-flex justify-content-center">
+                <span class="material-icons material-icons-personal">
+                  home
+                </span>
+                <p class="icons-label-personal">ul. Górna Wilda 74/32, Poznań</p>
+              </div>
+              <div class="row personal-row d-flex justify-content-center">
+                <span class="material-icons material-icons-personal">
+                  email
+                </span>
+                <p class="icons-label-personal">szymonmichalak97@gmail.com</p>
+              </div>
+              <div class="row personal-row d-flex justify-content-center">
+                <span class="material-icons material-icons-personal">
+                  phone_android
+                </span>
+                <p class="icons-label-personal">+48 691-923-188</p>
+              </div>
+              <div class="row personal-row d-flex justify-content-center">
+                <span class="material-icons material-icons-personal">
+                  cake
+                </span>
+                <p class="icons-label-personal">18 lutego 1997 r.</p>
+              </div>
+              <div class="row personal-row d-flex justify-content-center">
+                <span class="material-icons material-icons-personal">
+                  <img id="github" src="./assets/github.svg">
+                </span>
+                <p class="icons-label-personal">/szymichalak</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <img mat-card-image id="photo" src="./assets/photo.jpg">
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="experience main-card">
+        <mat-card-header>
+          <mat-card-title id="experience">Doświadczenie</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card class="single-experience-card">
+            <mat-card-header>
+              <mat-card-title>Praktyki wakacyjne, Junior Developer</mat-card-title>
+              <mat-card-subtitle>Lipiec 2020 do chwili obecnej</mat-card-subtitle>
+              <mat-card-subtitle>BeOne Sp. z o. o.</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              • Tworzenie aplikacji do podpisywania elektronicznego dokumentów - (Angular, Kotlin)<br>
+              • Implementacja systemu do zarządzania dokumentami dla banków - (Angular, Kotlin)
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="single-experience-card">
+            <mat-card-header>
+              <mat-card-title>Praktyki wakacyjne</mat-card-title>
+              <mat-card-subtitle>Sierpień/Wrzesień 2018</mat-card-subtitle>
+              <mat-card-subtitle>Volkswagen Poznań Sp. z o. o. – Zespół sieciowy</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              • Konfigurowanie przełączników i routerów<br>
+              • Testowanie urządzeń podczas ataku DoS<br>
+              • Kontrolowanie ilości zdarzeń, użyto wewnętrznego systemu
+            </mat-card-content>
+          </mat-card>     
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="education main-card">
+        <mat-card-header>
+          <mat-card-title id="education">Wykształcenie</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card class="single-education-card">
+            <mat-card-header>
+              <mat-card-title>Politechnika Poznańska</mat-card-title>
+              <mat-card-subtitle>Studia II stopnia, 2021 do chwili obecnej</mat-card-subtitle>
+              <mat-card-subtitle>Technologie Przetwarzania Danych - Wydział Informatyki i Telekomunikacji</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <mat-card class="single-education-card">
+            <mat-card-header>
+              <mat-card-title>Politechnika Poznańska</mat-card-title>
+              <mat-card-subtitle>Studia I stopnia, 2017-2021</mat-card-subtitle>
+              <mat-card-subtitle>Tytuł inżyniera - Wydział Informatyki i Telekomunikacji</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <mat-card class="single-education-card">
+            <mat-card-header>
+              <mat-card-title>Zespół Szkół Politechnicznych im. Bohaterów Monte Cassino we Wrześni</mat-card-title>
+              <mat-card-subtitle>Szkoła średnia, 2013-2017</mat-card-subtitle>
+              <mat-card-subtitle>Tytuł technika elektronika</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>     
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="hobbies main-card">
+        <mat-card-header>
+          <mat-card-title id="hobbies">Hobby</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list role="list">
+            <mat-list-item style="font-size: 14px; height: 25px; margin-left: 32px;" role="listitem" *ngFor="let hobby of hobbies">{{hobby}}</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+
+      <div class="clause">
+        Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji 
+        (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie 
+        z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób 
+        fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia 
+        dyrektywy 95/46/WE (RODO).
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,93 @@
+.left-col {
+    background-color: rgb(240, 240, 240);
+    height: 1585px;
+    padding: 30px;
+}
+
+.right-col {
+    background-color: white;
+    height: 1585px;
+}
+
+.icons-label {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.material-icons {
+    line-height: 50px;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icons-label-personal {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.material-icons-personal {
+    line-height: 30px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skill-row {
+    height: 35px;
+}
+
+.skill-row {
+    height: 50px;
+}
+
+.badge {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 10px;
+    padding: 15px;
+    border: 0px;
+}
+
+.pills {
+    margin-bottom: 20px;
+}
+
+.personal-card {
+    #photo {
+        height: 250px;
+        width: 200px;
+        margin: 0px;
+        // border: 1px solid black;
+        // border-radius: 50%;
+    }
+}
+
+.main-card {
+    margin-top: 15px;
+}
+
+mat-card-subtitle {
+    margin-bottom: 5px;
+    border-left: 4px solid #6c757d;
+    padding-left: 5px;
+}
+
+.mat-list-item {
+    border-left: 4px solid #6c757d;
+    padding-left: 5px;
+}
+
+.clause {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    text-align: justify;
+    font-size: 9px;
+    line-height: normal;
+}
+
+#github {
+    margin-bottom: 10px;
+}
