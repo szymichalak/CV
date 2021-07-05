@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cv';
+  panelOpenState = false;
+  printPDF = false;
 
-  techniques = ['Angular', 'Bootstrap', 'Angular Material', 'NgRx', 'CSS', 'HTML', 'JavaScript', 'TypeScript', 'Python', 'SQL', 'Kotlin', 'Selenium', 'C', 'Git', 'REST API', 'Scrum'];
+  techniques = ['Angular', 'Bootstrap', 'Angular Material', 'NgRx', 'CSS', 'HTML', 'JavaScript', 'TypeScript', 'RxJS', 'Python', 'SQL', 'Kotlin', 'Selenium', 'Leaflet', 'C', 'Git', 'REST API', 'Scrum', 'Docker'];
   opSystems = ['MS Windows', 'Linux'];
   IDEs = ['IntelliJ', 'PyCharm', 'MS Visual Studio Code'];
   languages = ['angielski - zaawansowany', 'niemiecki - podstawowy'];

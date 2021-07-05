@@ -5,52 +5,95 @@
 }
 
 .right-col {
-    background-color: white;
+    background-color: ghostwhite;
     height: 1585px;
+    padding: 25px;
 }
 
-.icons-label {
-    font-size: 25px;
-    line-height: 50px;
+// desctop devices
+@media only screen and (min-width: 992px) {
+    .icons-label {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    
+    .material-icons {
+        line-height: 50px;
+        font-size: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .icons-label-personal {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    
+    .material-icons-personal {
+        line-height: 30px;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .skill-row {
+        height: 50px;
+    }
+    
+    .badge {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 5px 10px;
+        padding: 15px;
+        border: 0px;
+    }
+    
+    .pills {
+        margin-bottom: 20px;
+    }
 }
 
-.material-icons {
-    line-height: 50px;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.icons-label-personal {
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.material-icons-personal {
-    line-height: 30px;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.skill-row {
-    height: 35px;
-}
-
-.skill-row {
-    height: 50px;
-}
-
-.badge {
-    font-size: 20px;
-    font-weight: 400;
-    margin: 5px 10px;
-    padding: 15px;
-    border: 0px;
-}
-
-.pills {
-    margin-bottom: 20px;
+// mobile devices
+@media only screen and (max-width: 991px) {
+    .icons-label {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .material-icons {
+        line-height: 40px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .icons-label-personal {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .material-icons-personal {
+        line-height: 20px;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .skill-row {
+        height: 35px;
+    }
+    
+    .badge {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 10px;
+        padding: 10px;
+        border: 0px;
+    }
+    
+    .pills {
+        margin-bottom: 10px;
+    }
 }
 
 .personal-card {
@@ -90,4 +133,22 @@ mat-card-subtitle {
 
 #github {
     margin-bottom: 10px;
+}
+
+.custom-card-header {
+    margin-top: 15px !important;
+}
+
+mat-expansion-panel {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mobile-view {
+    background-color: ghostwhite;
+    padding: 15px;
+}
+
+mat-card-content {
+    text-align: justify;
 }
