@@ -1,17 +1,19 @@
 .left-col {
     background-color: rgb(240, 240, 240);
-    height: 1585px;
     padding: 30px;
 }
 
 .right-col {
     background-color: ghostwhite;
-    height: 1585px;
     padding: 25px;
 }
 
 // desctop devices
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 991px), print {
+    .print-height {
+        height: 1585px;
+    }
+
     .icons-label {
         font-size: 25px;
         line-height: 50px;
@@ -101,8 +103,8 @@
         height: 250px;
         width: 200px;
         margin: 0px;
-        // border: 1px solid black;
-        // border-radius: 50%;
+        border-radius: 10%;
+        padding: 0px;
     }
 }
 
@@ -121,11 +123,18 @@ mat-card-subtitle {
     padding-left: 5px;
 }
 
-.clause {
+.clause-print{
     position: absolute;
     bottom: 5px;
     right: 5px;
     left: 5px;
+    text-align: justify;
+    font-size: 9px;
+    line-height: normal;
+}
+
+.clause {
+    margin-top: 35px;
     text-align: justify;
     font-size: 9px;
     line-height: normal;
@@ -158,4 +167,8 @@ mat-expansion-panel {
 
 mat-card-content {
     text-align: justify;
+}
+
+.no-padding {
+    padding: 0px
 }

@@ -1,10 +1,10 @@
 <!-- desctop version -->
 <div [ngClass]="printPDF == true ? 'container-fluid' : 'container-fluid d-none d-lg-block'">
   <div class="row">
-    <div class="col-4 left-col">
+    <div [ngClass]="printPDF == true ? 'col-4 left-col print-height' : 'col-4 left-col'">
       <ng-container *ngTemplateOutlet="skills"></ng-container>
     </div>
-    <div class="col-8 right-col">
+    <div [ngClass]="printPDF == true ? 'col-8 right-col print-height' : 'col-8 right-col'">
       <mat-card class="personal-card main-card">
         <mat-card-content>
           <div class="row">
@@ -43,8 +43,8 @@
                 <p class="icons-label-personal">/szymichalak</p>
               </div>
             </div>
-            <div class="col-4">
-              <img mat-card-image id="photo" src="./assets/photo.jpg">
+            <div class="col-4 no-padding">
+              <img mat-card-image id="photo" src="./assets/photo-new.jpg">
             </div>
           </div>
         </mat-card-content>
@@ -62,7 +62,7 @@
       <mat-card-title class="custom-card-header">O mnie</mat-card-title>
       <ng-container *ngTemplateOutlet="aboutMe"></ng-container>
 
-      <div class="clause">
+      <div [ngClass]="printPDF == true ? 'clause-print' : 'clause'">
         Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji 
         (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie 
         z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób 
@@ -80,7 +80,7 @@
   <mat-card class="personal-card">
     <mat-card-content>
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-sm-7">
           <div class="row personal-row d-flex justify-content-center">
             <p class="icons-label-personal" style="font-size: 24px; font-weight: bold;">Szymon Michalak</p>
           </div>
@@ -115,8 +115,8 @@
             <p class="icons-label-personal">/szymichalak</p>
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-center">
-          <img mat-card-image id="photo" src="./assets/photo.jpg">
+        <div class="col-12 col-sm-5 d-flex justify-content-center">
+          <img mat-card-image id="photo" src="./assets/photo-new.jpg">
         </div>
       </div>
     </mat-card-content>
@@ -242,14 +242,14 @@
   <mat-card class="single-education-card">
     <mat-card-header>
       <mat-card-title>Politechnika Poznańska</mat-card-title>
-      <mat-card-subtitle>Studia II stopnia, 2021 do chwili obecnej</mat-card-subtitle>
+      <mat-card-subtitle>Studia II stopnia, stacjonarne, 2021 do chwili obecnej</mat-card-subtitle>
       <mat-card-subtitle>Technologie Przetwarzania Danych - Wydział Informatyki i Telekomunikacji</mat-card-subtitle>
     </mat-card-header>
   </mat-card>
   <mat-card class="single-education-card">
     <mat-card-header>
       <mat-card-title>Politechnika Poznańska</mat-card-title>
-      <mat-card-subtitle>Studia I stopnia, 2017-2021</mat-card-subtitle>
+      <mat-card-subtitle>Studia I stopnia, stacjonarne, 2017-2021</mat-card-subtitle>
       <mat-card-subtitle>Tytuł inżyniera - Wydział Informatyki i Telekomunikacji</mat-card-subtitle>
     </mat-card-header>
   </mat-card>
